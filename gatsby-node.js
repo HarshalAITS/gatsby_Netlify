@@ -23,7 +23,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
             variants {
               id
-               
+              compareAtPriceV2 {
+                amount
+                currencyCode
+              }
               priceV2 {
                 amount
                 currencyCode
